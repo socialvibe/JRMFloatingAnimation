@@ -206,7 +206,7 @@
             </objects>
             <point key="canvasLocation" x="1450" y="-144"/>
         </scene>
-        <!--Table View Controller-->
+        <!--JRMFloatingAnimation-->
         <scene sceneID="E2a-9O-E3g">
             <objects>
                 <tableViewController id="9It-ai-Cht" sceneMemberID="viewController">
@@ -305,7 +305,7 @@
                             <outlet property="delegate" destination="9It-ai-Cht" id="nRX-zs-3uN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Aua-Y9-iyg"/>
+                    <navigationItem key="navigationItem" title="JRMFloatingAnimation" id="Aua-Y9-iyg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGn-ib-IOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

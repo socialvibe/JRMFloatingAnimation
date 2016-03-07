@@ -9,6 +9,8 @@
 
 JRMFloatingAnimation is an ObjC library used to create floating image views:
 
+![alt tag](http://i.imgur.com/tcZ1AEj.gifv)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -23,6 +25,8 @@ To animate the view:
 
 	[self.floatingView animate];
 
+You can add as many images to your view as you want, and they will be used randomly. Note that the images should be square.
+
 There are a variety of different settings you can add to your animation view.
 
 * `startingPointWidth` - Varies the x of the starting point, with the starting point y being the middle. default is 0.
@@ -36,7 +40,15 @@ There are a variety of different settings you can add to your animation view.
 * `pop`: Gives the impression of the images "popping" before they are removed from the view. Default NO.
 * `maxFloatObjectSize`: The maximum size a floating object can be. Default is 20.
 * `minFloatObjectSize`: The minimum size a floating object can be. If the minFloatObjectSize < maxFloatObjectSize, both sizes become the minFloatObjectSize. Default is 10.
-
+* `floatingShape`: The "shape" that the animation can take. Default is JRMFloatingShapeStraight.
+	* `JRMFloatingShapeTriangleUp` - Floats up in a cone shape from the starting point.
+	* `JRMFloatingShapeStraight` - Floats straight up from the starting point.
+	* `JRMFloatingShapeCurveLeft` - Floats up and curves to the left.
+	* `JRMFloatingShapeCurveRight` - Floats up and curves to the right.
+* `fadeOut`: If the floating object's alpha should fade out before disappearing from the view. Default NO.
+* `varyAlpha`: If the floating object's alpahs should vary (to give a more randomized look). Default NO.
+* `animationDuration`: The speed of the animation. Default 2.
+* `removeOnCompletion`: If the floating object should be removed from the superview when the animation is finished. Default YES.
 
 ## Installation
 
@@ -47,7 +59,7 @@ it, simply add the following line to your Podfile:
 pod "JRMFloatingAnimation"
 ```
 
-In your code 
+In your code:
 
 ## Author
 
