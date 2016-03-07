@@ -14,13 +14,17 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* JRMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* JRMAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* JRMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* JRMViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		8223922B1C8E090C00C086A9 /* JRMDemoBalloonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822392221C8E090C00C086A9 /* JRMDemoBalloonViewController.m */; };
+		8223922C1C8E090C00C086A9 /* JRMDemoFishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822392241C8E090C00C086A9 /* JRMDemoFishViewController.m */; };
+		8223922D1C8E090C00C086A9 /* JRMDemoMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822392261C8E090C00C086A9 /* JRMDemoMusicViewController.m */; };
+		8223922E1C8E090C00C086A9 /* JRMDemoTractorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822392281C8E090C00C086A9 /* JRMDemoTractorViewController.m */; };
+		8223922F1C8E090C00C086A9 /* JRMFloatingAnimation-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 822392291C8E090C00C086A9 /* JRMFloatingAnimation-Info.plist */; };
+		822392331C8E0B1100C086A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822392321C8E0B1100C086A9 /* Images.xcassets */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E46D73335AF6162E0EC1B415 /* Pods_JRMFloatingAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68599F368966FB80D6DCBFD7 /* Pods_JRMFloatingAnimation_Example.framework */; };
 /* End PBXBuildFile section */
@@ -50,9 +54,6 @@
 		6003F59B195388D20070C39A /* JRMFloatingAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JRMFloatingAnimation-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* JRMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* JRMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* JRMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* JRMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* JRMFloatingAnimation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRMFloatingAnimation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -60,6 +61,17 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		68599F368966FB80D6DCBFD7 /* Pods_JRMFloatingAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRMFloatingAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822392211C8E090C00C086A9 /* JRMDemoBalloonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMDemoBalloonViewController.h; sourceTree = "<group>"; };
+		822392221C8E090C00C086A9 /* JRMDemoBalloonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMDemoBalloonViewController.m; sourceTree = "<group>"; };
+		822392231C8E090C00C086A9 /* JRMDemoFishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMDemoFishViewController.h; sourceTree = "<group>"; };
+		822392241C8E090C00C086A9 /* JRMDemoFishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMDemoFishViewController.m; sourceTree = "<group>"; };
+		822392251C8E090C00C086A9 /* JRMDemoMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMDemoMusicViewController.h; sourceTree = "<group>"; };
+		822392261C8E090C00C086A9 /* JRMDemoMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMDemoMusicViewController.m; sourceTree = "<group>"; };
+		822392271C8E090C00C086A9 /* JRMDemoTractorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMDemoTractorViewController.h; sourceTree = "<group>"; };
+		822392281C8E090C00C086A9 /* JRMDemoTractorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMDemoTractorViewController.m; sourceTree = "<group>"; };
+		822392291C8E090C00C086A9 /* JRMFloatingAnimation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JRMFloatingAnimation-Info.plist"; sourceTree = "<group>"; };
+		8223922A1C8E090C00C086A9 /* JRMFloatingAnimation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRMFloatingAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		822392321C8E0B1100C086A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B71ED38AA4F393D93C6C63F1 /* Pods-JRMFloatingAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRMFloatingAnimation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRMFloatingAnimation_Tests/Pods-JRMFloatingAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BC6693281AF51B77F048953D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -144,9 +156,17 @@
 				6003F59C195388D20070C39A /* JRMAppDelegate.h */,
 				6003F59D195388D20070C39A /* JRMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* JRMViewController.h */,
-				6003F5A6195388D20070C39A /* JRMViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				822392211C8E090C00C086A9 /* JRMDemoBalloonViewController.h */,
+				822392221C8E090C00C086A9 /* JRMDemoBalloonViewController.m */,
+				822392231C8E090C00C086A9 /* JRMDemoFishViewController.h */,
+				822392241C8E090C00C086A9 /* JRMDemoFishViewController.m */,
+				822392251C8E090C00C086A9 /* JRMDemoMusicViewController.h */,
+				822392261C8E090C00C086A9 /* JRMDemoMusicViewController.m */,
+				822392271C8E090C00C086A9 /* JRMDemoTractorViewController.h */,
+				822392281C8E090C00C086A9 /* JRMDemoTractorViewController.m */,
+				822392291C8E090C00C086A9 /* JRMFloatingAnimation-Info.plist */,
+				8223922A1C8E090C00C086A9 /* JRMFloatingAnimation-Prefix.pch */,
+				822392321C8E0B1100C086A9 /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for JRMFloatingAnimation";
@@ -277,8 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				822392331C8E0B1100C086A9 /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8223922F1C8E090C00C086A9 /* JRMFloatingAnimation-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8223922D1C8E090C00C086A9 /* JRMDemoMusicViewController.m in Sources */,
+				8223922E1C8E090C00C086A9 /* JRMDemoTractorViewController.m in Sources */,
 				6003F59E195388D20070C39A /* JRMAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* JRMViewController.m in Sources */,
+				8223922C1C8E090C00C086A9 /* JRMDemoFishViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8223922B1C8E090C00C086A9 /* JRMDemoBalloonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

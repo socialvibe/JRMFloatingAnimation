@@ -1,0 +1,25 @@
+{
+  "name": "JRMFloatingAnimation",
+  "version": "0.1.0",
+  "summary": "A short description of JRMFloatingAnimation.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JRMFloatingAnimation",
+  "license": "MIT",
+  "authors": {
+    "Caroline Harrison": "caroline@jackrabbitmobile.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JRMFloatingAnimation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "JRMFloatingAnimation": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

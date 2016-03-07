@@ -1,0 +1,14 @@
+PODS:
+  - JRMFloatingAnimation (0.1.0)
+
+DEPENDENCIES:
+  - JRMFloatingAnimation (from `../`)
+
+EXTERNAL SOURCES:
+  JRMFloatingAnimation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JRMFloatingAnimation: 0cc35436b39b4d54a4b4425cf34b9c8398427132
+
+COCOAPODS: 0.39.0
