@@ -9,7 +9,7 @@
 
 JRMFloatingAnimation is an ObjC library used to create floating image views:
 
-![Alt tractor](http://i.imgur.com/tcZ1AEj.gifv)
+![Tractor](http://i.imgur.com/tcZ1AEj.gifv)
 
 ## Usage
 
