@@ -15,8 +15,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 To create the animation view:
 
-`self.floatingView = [[JRMFloatingAnimationView alloc] initWithStartingPoint:self.view.center];
-[self.floatingView addImage:[UIImage imageName:@"myImage"];`
+	self.floatingView = [[JRMFloatingAnimationView alloc] initWithStartingPoint:self.view.center];
+	[self.floatingView addImage:[UIImage imageName:@"myImage"];
 
 ## Installation
 
