@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.screenshots     = "http://i.imgur.com/qK2cqsA.gif", "http://i.imgur.com/8NPeUXq.gif", "http://i.imgur.com/0yiav9V.gif", "http://i.imgur.com/2BOmIcQ.gif"
   s.license          = 'MIT'
   s.author           = { "Caroline Harrison" => "caroline@jackrabbitmobile.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JRMFloatingAnimation.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/carleihar/JRMFloatingAnimation.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
