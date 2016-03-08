@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JRMFloatingAnimation: 0cc35436b39b4d54a4b4425cf34b9c8398427132
+  JRMFloatingAnimation: f5069e5c839a0add50c06ac0b098c31c37022dc9
 
 COCOAPODS: 0.39.0

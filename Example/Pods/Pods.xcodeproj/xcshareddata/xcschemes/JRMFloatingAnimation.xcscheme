@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A6C930874A032EF50BD052A2'
+               BlueprintIdentifier = '925FF3B3E561763D0109322C'
                BlueprintName = 'JRMFloatingAnimation'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JRMFloatingAnimation.framework'>
