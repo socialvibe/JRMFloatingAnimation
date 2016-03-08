@@ -15,7 +15,7 @@
     "Caroline Harrison": "caroline@jackrabbitmobile.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/JRMFloatingAnimation.git",
+    "git": "https://github.com/carleihar/JRMFloatingAnimation.git",
     "tag": "0.1.0"
   },
   "platforms": {
