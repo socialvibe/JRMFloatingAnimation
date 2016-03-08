@@ -47,7 +47,11 @@
         case JRMFloatingShapeTriangleUp: {
             NSArray* methods = @[@"curveLeftPath", @"curveRightPath", @"straightPath"];
             NSString* method = [methods objectAtIndex:[self randomIndex:[methods count]]];
+            // disable warning:"PerformSelector may cause a leak because its selector is unknown"
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             return [self performSelector:NSSelectorFromString(method)];
+            #pragma clang diagnostic pop
         } break;
         case JRMFloatingShapeCurveLeft: return [self curveLeftPath];
         case JRMFloatingShapeCurveRight: return [self curveRightPath];
