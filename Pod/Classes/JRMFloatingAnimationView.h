@@ -90,7 +90,6 @@ typedef NS_ENUM(NSInteger, JRMFloatingShape) {
  */
 @property BOOL removeOnCompletion;
 
-
 /**
  *  Must init the animation with a starting point, or you may experience unintended behavior.
  */
@@ -105,5 +104,6 @@ typedef NS_ENUM(NSInteger, JRMFloatingShape) {
  *  "Release" a floating object.
  */
 - (void)animate;
+
 
 @end
