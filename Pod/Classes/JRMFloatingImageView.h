@@ -13,7 +13,7 @@
 
 @interface JRMFloatingImageView : UIImageView
 
-@property (nonatomic, assign) JRMFloatingAnimationView *delegate;
+@property (nonatomic, weak) JRMFloatingAnimationView *delegate;
 
 - (void)start;
 

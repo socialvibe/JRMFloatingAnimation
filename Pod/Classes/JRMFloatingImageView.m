@@ -10,6 +10,7 @@
 
 @implementation JRMFloatingImageView
 
+
 - (void)start {
     UIBezierPath *zigzagPath = [self makeZigZagPathWithShape:self.delegate.floatingShape];
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
@@ -21,25 +22,29 @@
     pathAnimation.removedOnCompletion = NO;
     [self.layer addAnimation:pathAnimation forKey:@"movingAnimation"];
     if (self.delegate.fadeOut) {
+        __weak typeof(self) weakSelf = self;
         [UIView animateWithDuration:self.delegate.animationDuration animations:^{
-            [self setAlpha:0.0f];
+            [weakSelf setAlpha:0.0f];
         }];
     }
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {
-    [UIView transitionWithView:self
-                      duration:0.1f
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:^{
-                        if (self.delegate.pop) {
-                            self.transform = CGAffineTransformMakeScale(1.3, 1.3);    
-                        }
-                    } completion:^(BOOL finished) {
-                        if (self.delegate.removeOnCompletion) {
-                            [self removeFromSuperview];
-                        }
-                    }];
+    if (self.delegate) {
+        __weak typeof(self) weakSelf = self;
+        [UIView transitionWithView:self
+                          duration:0.1f
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            if (weakSelf.delegate.pop) {
+                                weakSelf.transform = CGAffineTransformMakeScale(1.3, 1.3);
+                            }
+                        } completion:^(BOOL finished) {
+                            if (weakSelf.delegate.removeOnCompletion) {
+                                [weakSelf removeFromSuperview];
+                            }
+                        }];
+    }
 }
 
 - (UIBezierPath *)makeZigZagPathWithShape:(JRMFloatingShape)floatingShape {

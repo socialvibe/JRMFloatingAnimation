@@ -1,5 +1,6 @@
 # JRMFloatingAnimation
 
+[![CI Status](http://img.shields.io/travis/Caroline Harrison/JRMFloatingAnimation.svg?style=flat)](https://travis-ci.org/Caroline Harrison/JRMFloatingAnimation)
 [![Version](https://img.shields.io/cocoapods/v/JRMFloatingAnimation.svg?style=flat)](http://cocoapods.org/pods/JRMFloatingAnimation)
 [![License](https://img.shields.io/cocoapods/l/JRMFloatingAnimation.svg?style=flat)](http://cocoapods.org/pods/JRMFloatingAnimation)
 [![Platform](https://img.shields.io/cocoapods/p/JRMFloatingAnimation.svg?style=flat)](http://cocoapods.org/pods/JRMFloatingAnimation)
@@ -61,8 +62,6 @@ pod "JRMFloatingAnimation"
 ```
 
 In your code:
-
-`#import <JRMFloatingAnimation/JRMFloatingAnimationView.h>`
 
 ## Author
 

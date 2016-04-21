@@ -173,15 +173,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lLS-Vx-ySM" secondAttribute="trailing" constant="28.5" id="Fdg-lr-Jbg"/>
                             <constraint firstItem="e7W-Cv-IaK" firstAttribute="top" secondItem="lLS-Vx-ySM" secondAttribute="bottom" constant="8" id="X3I-0v-Yfs"/>
                             <constraint firstItem="lLS-Vx-ySM" firstAttribute="leading" secondItem="p6b-nU-xw4" secondAttribute="leadingMargin" constant="27" id="YLo-JA-ng1"/>
                             <constraint firstItem="vHv-rZ-mKN" firstAttribute="centerX" secondItem="p6b-nU-xw4" secondAttribute="centerX" id="YLx-gD-sRF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lLS-Vx-ySM" secondAttribute="trailing" constant="28.5" id="YZI-fh-Lgf"/>
                             <constraint firstItem="lLS-Vx-ySM" firstAttribute="top" secondItem="Ldx-ev-R96" secondAttribute="bottom" constant="53" id="dSr-XD-Bhb"/>
                             <constraint firstItem="e7W-Cv-IaK" firstAttribute="centerX" secondItem="p6b-nU-xw4" secondAttribute="centerX" id="gMz-LN-9gY"/>
+                            <constraint firstItem="lLS-Vx-ySM" firstAttribute="leading" secondItem="p6b-nU-xw4" secondAttribute="leadingMargin" constant="27" id="iP1-Xj-8Vr"/>
                             <constraint firstItem="vHv-rZ-mKN" firstAttribute="top" secondItem="e7W-Cv-IaK" secondAttribute="bottom" constant="8" id="lOe-6N-Rir"/>
                             <constraint firstItem="lLS-Vx-ySM" firstAttribute="centerX" secondItem="p6b-nU-xw4" secondAttribute="centerX" id="u4W-HM-0MK"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YLo-JA-ng1"/>
+                                <exclude reference="YZI-fh-Lgf"/>
+                                <exclude reference="u4W-HM-0MK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLA-eH-Wm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
