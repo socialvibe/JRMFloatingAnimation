@@ -54,6 +54,7 @@ There are a variety of different settings you can add to your animation view.
 
 ## Installation
 
+#### CocoaPods
 JRMFloatingAnimation is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -61,7 +62,9 @@ it, simply add the following line to your Podfile:
 pod "JRMFloatingAnimation"
 ```
 
-In your code:
+#### Manually
+1. Download and drop ```/Pod/Classes```folder in your project.  
+2. Congratulations! 
 
 ## Author
 
