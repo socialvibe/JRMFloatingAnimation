@@ -51,6 +51,7 @@ There are a variety of different settings you can add to your animation view.
 * `varyAlpha`: If the floating object's alpahs should vary (to give a more randomized look). Default NO.
 * `animationDuration`: The speed of the animation. Default 2.
 * `removeOnCompletion`: If the floating object should be removed from the superview when the animation is finished. Default YES.
+* `imageViewAnimationCompleted`: A completion block to call whenever an image view is finished animating. It will return the image view. (See the JRMDemoBalloonViewController.m file for an example.)
 
 ## Installation
 
