@@ -22,26 +22,27 @@
     pathAnimation.removedOnCompletion = NO;
     [self.layer addAnimation:pathAnimation forKey:@"movingAnimation"];
     if (self.delegate.fadeOut) {
-        __weak typeof(self) weakSelf = self;
         [UIView animateWithDuration:self.delegate.animationDuration animations:^{
-            [weakSelf setAlpha:0.0f];
+            [self setAlpha:0.0f];
         }];
     }
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {
     if (self.delegate) {
-        __weak typeof(self) weakSelf = self;
         [UIView transitionWithView:self
                           duration:0.1f
                            options:UIViewAnimationOptionTransitionCrossDissolve
                         animations:^{
-                            if (weakSelf.delegate.pop) {
-                                weakSelf.transform = CGAffineTransformMakeScale(1.3, 1.3);
+                            if (self.delegate.pop) {
+                                self.transform = CGAffineTransformMakeScale(1.3, 1.3);
                             }
                         } completion:^(BOOL finished) {
-                            if (weakSelf.delegate.removeOnCompletion) {
-                                [weakSelf removeFromSuperview];
+                            if (self.delegate.imageViewAnimationCompleted) {
+                                self.delegate.imageViewAnimationCompleted(self);
+                            }
+                            if (self.delegate.removeOnCompletion) {
+                                [self removeFromSuperview];
                             }
                         }];
     }

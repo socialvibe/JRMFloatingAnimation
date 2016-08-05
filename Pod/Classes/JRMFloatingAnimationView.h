@@ -89,6 +89,11 @@ typedef NS_ENUM(NSInteger, JRMFloatingShape) {
  *  Default YES.
  */
 @property BOOL removeOnCompletion;
+/**
+ *  Completion block that will be called whenever an image's animation completes.
+ *
+ */
+@property (strong, nonatomic) void (^imageViewAnimationCompleted)(UIImageView *);
 
 /**
  *  Must init the animation with a starting point, or you may experience unintended behavior.

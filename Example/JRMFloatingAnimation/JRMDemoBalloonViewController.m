@@ -36,6 +36,9 @@
     self.floatingView.maxAnimationHeight = self.floatingView.maxAnimationHeight - 64;
     self.floatingView.minAnimationHeight = self.floatingView.maxAnimationHeight;
     self.floatingView.removeOnCompletion = NO;
+    self.floatingView.imageViewAnimationCompleted = ^void(UIImageView *imageView) {
+        imageView.image = [UIImage imageNamed:@"blueballoon"];
+    };
     
     [self.floatingView addImage:[UIImage imageNamed:@"balloon1"]];
     
