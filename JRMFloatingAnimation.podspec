@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JRMFloatingAnimation"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A floating animation that can be used for bubbles, clouds, music notes, or whatever your heart desires."
 
 # This description is used to generate tags and improve search results.
@@ -25,15 +25,15 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Caroline Harrison" => "caroline@jackrabbitmobile.com" }
   s.source           = { :git => "https://github.com/carleihar/JRMFloatingAnimation.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/carleihar'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'JRMFloatingAnimation' => ['Pod/Assets/*.png']
-  }
+#  s.resource_bundles = {
+#    'JRMFloatingAnimation' => ['Pod/Assets/*.png']
+#}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
